@@ -57,7 +57,7 @@ services:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: <change-me>
     networks:
-      delogic:
+      dotnetwork:
         ipv4_address: 10.0.0.6
 
   adminer:
@@ -65,7 +65,7 @@ services:
     container_name: adminer
     restart: always
     networks:
-      delogic:
+      dotnetwork:
         ipv4_address: 10.0.0.7
 
 volumes:
